@@ -1,8 +1,6 @@
 /* 
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Quester
+Author: Nicholas Friedman
 */
 
 
@@ -52,7 +50,134 @@ body {
      font-family: Helvetica, Arial, sans-serif;
      margin:0px;
 }
+h1{
+     text-align: center;
+     font-size: 5em;
+     background-color: rgb(20, 100, 20);
+}
+ul{
+     border: 1px solid black;
+     text-align: center;
+     padding: 5px 0px;
+     font-weight: bold;
+     font-size: 5em;
+     overflow: hidden;
+     /*position: absolute;*/
+     cursor: pointer;
+     display: none;
+     background-color: blue;
+     width: 100%;
+}
+li:first-of-type{
+     display: block;
+     float: left;
+}
+h3{
+     font-size: 4em;
+}
+button{
+     font-size: 4em;
+     padding: 1%;
+     margin: 1%;
+     cursor: pointer;
+
+}
+a{
+     padding: 5% 5%;
+     border: 1px solid black;
+     font-size: 3em;
+     margin: 0% 1%;
+     cursor: pointer;
+
+}
+/******************************************
+/* AskQ                   
+/*******************************************/
+h2{
+     font-size: 3em;
+     margin: 1%;
+}
+input{
+     font-size: 3em;
+     display: block;
+     padding: 2%;
+     margin: 1%
+}
+input[type="checkbox"]{
+     display: inline-block;
+}
+input[type="submit"]{
+     background: red;
+     color: white;
+     width: 80%;
+     margin: 2% 10%;
+}
+
+
+
+
+
 
 /******************************************
 /* LAYOUT                   
 /*******************************************/
+header{
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+main{
+     padding-top: 7em;
+     padding-bottom: 14em;
+}
+
+div{
+     border: 1px solid black;
+     padding: 5%;
+}
+nav{
+     background-color: rgb(100, 100, 200);
+     text-align: center;
+     padding: 5%;
+}
+.big{
+     display: none;
+     padding-top: 10em;
+     padding-bottom: 14em;
+}
+footer{
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+     opacity: 0.98;
+}
+@media only screen and (min-width: 768px){
+     div{
+          margin: 0% 10%;
+     }
+     ul{
+          display: block;
+          font-size: 2em;
+     }
+     li{
+          float: left;
+          margin: 0% 5%;
+     }
+}
+
+@media only screen and (min-width: 1024px){
+     footer{
+          display: none;
+     }
+     .big{
+          display: block;
+          float: right;
+          padding-top: 10em;
+     }
+     main{
+          float: left;
+     }
+     div{
+          margin: 0% 5%;
+     }
+}

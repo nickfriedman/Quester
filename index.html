@@ -15,11 +15,16 @@
 	<body>
 
 		<header>
-			<h1>Q</h1>
+			<h1>Quester</h1>
 		</header>
 
-		<main>
-			<h2>Top Questions</h2>
+		<main> 
+			<ul class="menu">
+				<li>Top Questions</li>
+				<li>Most Recent</li>
+				<li>Sports</li>
+			</ul>
+			<section class="questions">
 			<div>
 				<h3>Which state is better?</h3>
 				<button>New York</button> 
@@ -58,16 +63,46 @@
 				<button></button>
 				<button></button>
 			</div>
+		</section>
 		</main>
 
-		<aside>
+		<aside class="big">
+			<form>
+				<h2>Ask a question:</h2>
+				<input class="q" type="question" name=question maxlenght=40 required placeholder="Ask a question">
+				<h2>Provide Multiple Choice Answers:</h2>
+				<input class="a1" type="answer" required name="Answer 1"placeholder="Answer 1">
+				<input class="a2" type="answer" required name="Answer 2" placeholder="Answer 2">
+				<input type="answer" name="Answer 3" placeholder="Answer 3">
+				<input type="answer" name="Answer 4" placeholder="Answer 4">
+				<h2>Select Theme Categories:</h2>
+				<!-- <select multiple>
+				  	<option value="sports">Sports</option>
+				  	<option value="poli">Politics</option>
+				  	<option value="history">History</option>
+				  	<option value="celeb">Celebrities</option>
+				  	<option value="Movies">Movies and TV</option>
+				</select> -->
+				<input type="checkbox" name="sub" value="sports">Sports
+				<input type="checkbox" name="sub" value="poli">Politics 
+				<input type="checkbox" name="sub" value="history">History
+				<input type="checkbox" name="sub" value="celeb">Celebrities
+				<input type="checkbox" name="sub" value="Movies">Movies
+				<input class="submit" name="sub" type="submit">
+			</form>
 		</aside>
 
 		<footer>
+			<nav>
+				<a id= "Ask"> <!-- href="AskQ.html" -->Ask Q</a>
+				<a id="Q">Home</a>
+				<a> <!-- href="YourQ.html" -->Your Q's</a>
+				<a> <!-- href="settings.html" -->Settings</a>
+			</nav>
 		</footer>
 
 		<!-- javascript -->
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="java/main.js"></script>
 	</body>
 </html>
