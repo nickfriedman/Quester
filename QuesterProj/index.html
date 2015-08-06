@@ -16,13 +16,16 @@
 
 		<header>
 			<h1>Quester</h1>
+			<h2>My Questions</h2>
+			<h2>Settings</h2>
 		</header>
 
 		<main> 
 			<ul class="menu">
 				<li>Top Questions</li>
-				<li>Most Recent</li>
-				<li>Sports</li>
+				<li class="hidden">Most Recent</li>
+				<li class="hidden">Sports</li>
+				<li class="hidden">Movies</li>
 			</ul>
 			<section class="questions">
 			<div>
@@ -41,7 +44,7 @@
 				<button>Pepsi</button>
 			</div>
 			<div>
-				<h3>What is the best fast food burger</h3>
+				<h3>What is the best fast food burger?</h3>
 				<button>McDonalds</button>
 				<button>Burger King</button>
 				<button>Wendy's</button>
@@ -54,14 +57,17 @@
 				<button>Montana</button>
 			</div>
 			<div>
-				<h3></h3>
-				<button></button>
-				<button></button>
+				<h3>What is the best HBO show?</h3>
+				<button>The Wire</button>
+				<button>Game of Thrones</button>
+				<button>The Sopranos</button>
+				<button>Boardwalk Empire</button>
 			</div>
 			<div>
-				<h3></h3>
-				<button></button>
-				<button></button>
+				<h3>What is the best meal of the day?</h3>
+				<button>Breakfast</button>
+				<button>Lunch</button>
+				<button>Dinner</button>
 			</div>
 		</section>
 		</main>
@@ -73,8 +79,8 @@
 				<h2>Provide Multiple Choice Answers:</h2>
 				<input class="a1" type="answer" required name="Answer 1"placeholder="Answer 1">
 				<input class="a2" type="answer" required name="Answer 2" placeholder="Answer 2">
-				<input type="answer" name="Answer 3" placeholder="Answer 3">
-				<input type="answer" name="Answer 4" placeholder="Answer 4">
+				<input class="a3" type="answer" name="Answer 3" placeholder="Answer 3">
+				<input class="a4" type="answer" name="Answer 4" placeholder="Answer 4">
 				<h2>Select Theme Categories:</h2>
 				<!-- <select multiple>
 				  	<option value="sports">Sports</option>
@@ -83,11 +89,11 @@
 				  	<option value="celeb">Celebrities</option>
 				  	<option value="Movies">Movies and TV</option>
 				</select> -->
-				<input type="checkbox" name="sub" value="sports">Sports
-				<input type="checkbox" name="sub" value="poli">Politics 
-				<input type="checkbox" name="sub" value="history">History
-				<input type="checkbox" name="sub" value="celeb">Celebrities
-				<input type="checkbox" name="sub" value="Movies">Movies
+				<input type="checkbox" name="sub" value="sports">#Sports
+				<input type="checkbox" name="sub" value="poli">#Politics 
+				<input type="checkbox" name="sub" value="history">#History
+				<input type="checkbox" name="sub" value="celeb">#Celebrities
+				<input type="checkbox" name="sub" value="Movies">#Movies
 				<input class="submit" name="sub" type="submit">
 			</form>
 		</aside>
@@ -96,7 +102,7 @@
 			<nav>
 				<a id= "Ask"> <!-- href="AskQ.html" -->Ask Q</a>
 				<a id="Q">Home</a>
-				<a> <!-- href="YourQ.html" -->Your Q's</a>
+				<a> <!-- href="YourQ.html" -->My Q's</a>
 				<a> <!-- href="settings.html" -->Settings</a>
 			</nav>
 		</footer>

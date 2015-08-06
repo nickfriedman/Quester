@@ -38,22 +38,32 @@ Author: Nicholas Friedman
 	float: left; 
 	padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
-
+.hidden {
+     display: none;
+}
 /******************************************
 /* BASE STYLES                   
 /*******************************************/
 
 body {
      color: #000;
+     background-color: #f5f8fa;
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
      margin:0px;
 }
-h1{
+header{
      text-align: center;
+/*     background-color: rgb(20, 100, 20);
+*/     background-color: #31393a;
+
+}
+h1{
      font-size: 5em;
-     background-color: rgb(20, 100, 20);
+}
+header h2{
+     display: none;
 }
 ul{
      border: 1px solid black;
@@ -65,12 +75,17 @@ ul{
      /*position: absolute;*/
      cursor: pointer;
      display: none;
-     background-color: blue;
-     width: 100%;
+     background-color: #272727;
+     color: #fff;;
 }
 li:first-of-type{
      display: block;
      float: left;
+     text-align: center;
+     width: 100%;
+}
+li:hover{
+     color: yellow;
 }
 h3{
      font-size: 4em;
@@ -142,8 +157,10 @@ nav{
 }
 .big{
      display: none;
-     padding-top: 10em;
-     padding-bottom: 14em;
+     padding-top: 1.5em;
+     margin-top: 6em;
+     margin-bottom: 14em;
+     padding-bottom: 2em;
 }
 footer{
      width: 100%;
@@ -151,6 +168,7 @@ footer{
      bottom: 0;
      opacity: 0.98;
 }
+
 @media only screen and (min-width: 768px){
      div{
           margin: 0% 10%;
@@ -158,10 +176,6 @@ footer{
      ul{
           display: block;
           font-size: 2em;
-     }
-     li{
-          float: left;
-          margin: 0% 5%;
      }
 }
 
@@ -172,12 +186,32 @@ footer{
      .big{
           display: block;
           float: right;
-          padding-top: 10em;
+          margin-top: 10em;
+          margin-right: 1%;
+          width: 40%;
+          border: 1px solid black;
+          border-radius: 25px;
      }
      main{
           float: left;
+          width: 59%;
+     }
+     .menu{
+          margin: 0% 1%;
      }
      div{
-          margin: 0% 5%;
+          margin: 0% 1%;
+     }
+     header h1{
+          float: left;
+          margin-left: 1%;
+     }
+     header h2{
+          float: right;
+          display: block;
+          cursor: pointer;
+     }
+     header h2:hover{
+          color: yellow;
      }
 }
