@@ -55,8 +55,7 @@ body {
 }
 header{
      text-align: center;
-/*     background-color: rgb(20, 100, 20);
-*/     background-color: #31393a;
+    background-color: #006b3a;
 
 }
 h1{
@@ -70,13 +69,12 @@ ul{
      text-align: center;
      padding: 5px 0px;
      font-weight: bold;
-     font-size: 5em;
+     font-size: 2em;
      overflow: hidden;
      /*position: absolute;*/
      cursor: pointer;
-     display: none;
-     background-color: #272727;
-     color: #fff;;
+     background-color: #31393a;
+     color: #fff;
 }
 li:first-of-type{
      display: block;
@@ -98,12 +96,21 @@ button{
 
 }
 a{
-     padding: 5% 5%;
+     padding: 2% 3%;
      border: 1px solid black;
      font-size: 3em;
      margin: 0% 1%;
      cursor: pointer;
-
+}
+.graph{
+     width: 90%;
+     display: none;
+     height: .3em;
+     background-color: red;
+}
+p{
+     display: none;
+     font-size: 2em;
 }
 /******************************************
 /* AskQ                   
@@ -151,9 +158,9 @@ div{
      padding: 5%;
 }
 nav{
-     background-color: rgb(100, 100, 200);
+     background-color: rgb(87, 87, 255);
      text-align: center;
-     padding: 5%;
+     padding: 2%;
 }
 .big{
      display: none;

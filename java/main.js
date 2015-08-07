@@ -55,7 +55,9 @@ $(function() {
  //clicking a button
  $("button").click(function() {
  	$(this).siblings('button').hide();
-
+ 	$(this).hide();
+ 	$(this).siblings('.graph').show();
+ 	$(this).siblings('p').show();
  });
 
  function goHome(){
