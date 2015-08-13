@@ -172,7 +172,7 @@ header{
 }
 main{
      padding-top: 7em;
-     padding-bottom: 14em;
+     margin-bottom: 6.6em;
 }
 
 div{
@@ -189,7 +189,7 @@ nav{
 .big{
      display: none;
      padding-top: 1.5em;
-     margin-top: 6em;
+     margin-top: 8em;
      margin-bottom: 7em;
      padding-left: 2em;
      padding-bottom: 2em;
@@ -242,6 +242,7 @@ footer{
      main{
           float: left;
           margin-left: 2%;
+          margin-bottom: 5em;
           width: 57%;
      }
      .myQ{

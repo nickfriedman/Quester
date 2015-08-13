@@ -61,7 +61,7 @@ $(function() {
  });
  //Click on Home
  $(".gohome").click(function() {
- 	$("myQ").hide();
+ 	$(".myQ").hide();
  	$("main").show();
  	$("body").scrollTop(0);
 
