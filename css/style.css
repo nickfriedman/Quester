@@ -47,7 +47,8 @@ Author: Nicholas Friedman
 
 body {
      color: #000;
-     background-color: #f5f8fa;
+/*     background-color: #f5f8fa;
+*/    background-color: #e9eaed;
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
@@ -55,8 +56,9 @@ body {
 }
 header{
      text-align: center;
-    background-color: #006b3a;
-
+     background-color: #006b3a;
+     border-bottom: 1px solid #044729;
+     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52);
 }
 h1{
      font-size: 5em;
@@ -103,14 +105,31 @@ a{
      cursor: pointer;
 }
 .graph{
-     width: 90%;
      display: none;
      height: .3em;
-     background-color: red;
+     margin: 0%;
+}
+.win{
+     width: 90%;
+}
+.lose{
+     width:10%;
 }
 p{
      display: none;
      font-size: 2em;
+}
+.option{
+     border: none;
+     padding: 0%;
+     margin: 0%;
+     display: inline;
+}
+i{
+     font-size: 1.4em;
+}
+b{
+     margin-left: 4%;
 }
 /******************************************
 /* AskQ                   
@@ -123,7 +142,13 @@ input{
      font-size: 3em;
      display: block;
      padding: 2%;
-     margin: 1%
+     margin: 1%;
+}
+input[type="question"]{
+     width: 98%;
+}
+input[type="answer"]{
+     width: 98%;
 }
 input[type="checkbox"]{
      display: inline-block;
@@ -134,9 +159,6 @@ input[type="submit"]{
      width: 80%;
      margin: 2% 10%;
 }
-
-
-
 
 
 
@@ -156,7 +178,9 @@ main{
 div{
      border: 1px solid black;
      padding: 5%;
+     background-color: white;
 }
+
 nav{
      background-color: rgb(87, 87, 255);
      text-align: center;
@@ -166,8 +190,23 @@ nav{
      display: none;
      padding-top: 1.5em;
      margin-top: 6em;
-     margin-bottom: 14em;
+     margin-bottom: 7em;
+     padding-left: 2em;
      padding-bottom: 2em;
+     background-color: white;
+     font-size: .8em;
+}
+.myQ{
+     display: none;
+     margin-top: 7em;
+     margin-bottom: 6em;
+     background-color: white;
+}
+.myQ h3:nth-child(even){
+     background-color: rgb(220,220,220);
+}
+.myQ h3{
+     padding: 0.5em 0;
 }
 footer{
      width: 100%;
@@ -193,15 +232,22 @@ footer{
      .big{
           display: block;
           float: right;
-          margin-top: 10em;
-          margin-right: 1%;
-          width: 40%;
+          margin-top: 10.7em;
+          margin-right: 2%;
+          margin-left: 2%;
+          width: 37%;
           border: 1px solid black;
           border-radius: 25px;
      }
      main{
           float: left;
-          width: 59%;
+          margin-left: 2%;
+          width: 57%;
+     }
+     .myQ{
+          float: left;
+          width: 58%;
+          margin-left: 1%;
      }
      .menu{
           margin: 0% 1%;

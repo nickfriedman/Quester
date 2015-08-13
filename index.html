@@ -16,13 +16,14 @@
 
 		<header>
 			<h1>Quester</h1>
-			<h2>My Questions</h2>
 			<h2>Settings</h2>
+			<h2 class="myQheader">My Questions</h2>
+			<h2 class="gohome">Home</h2>
 		</header>
 
 		<main> 
 			<ul class="menu">
-				<li>Top Questions</li>
+				<li>Top Questions <b>V</b></li>
 				<li class="hidden">Most Recent</li>
 				<li class="hidden">Sports</li>
 				<li class="hidden">Movies</li>
@@ -30,48 +31,124 @@
 			<section class="questions">
 			<div>
 				<h3>Which state is better?</h3>
-				<button>New York</button>
-				<p>New York</p> 
-				<div class="graph"></div>
-				<button>California</button>
-				<p>California</p>
-				<div class="graph"></div>
+				<div class="option">
+					<button>New York</button>
+					<p class="voted">New York</p> 
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>California</button>
+					<p class="voted">California</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 			<div>
 				<h3>Best Superhero?</h3>
-				<button>Batman</button>
-				<button>Superman</button>
+				<div class="option">
+					<button>Batman</button>
+					<p class="voted">Batman</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Superman</button>
+					<p class="voted">Superman</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 			<div>
 				<h3>Better tasting soda?</h3>
-				<button>Coke</button>
-				<button>Pepsi</button>
+				<div class="option">
+					<button>Coke</button>
+					<p class="voted">Coke</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Pepsi</button>
+					<p class="voted">Pepsi</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 			<div>
 				<h3>What is the best fast food burger?</h3>
-				<button>McDonalds</button>
-				<button>Burger King</button>
-				<button>Wendy's</button>
+				<div class="option">
+					<button>McDonalds</button>
+					<p class="voted">McDonalds</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Burger King</button>
+					<p class="voted">Burger King</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Wendy's</button>
+					<p class="voted">Wendy's</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 			<div>
 				<h3>Who is the Greatest QB ever?</h3>
-				<button>Manning</button>
-				<button>Brady</button>
-				<button>Favre</button>
-				<button>Montana</button>
+				<div class="option">
+					<button>Manning</button>
+					<p class="voted">Manning</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Brady</button>
+					<p class="voted">Brady</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Favre</button>
+					<p class="voted">Favre</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Montana</button>
+					<p class="voted">Montana</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 			<div>
 				<h3>What is the best HBO show?</h3>
-				<button>The Wire</button>
-				<button>Game of Thrones</button>
-				<button>The Sopranos</button>
-				<button>Boardwalk Empire</button>
+				<div class="option">
+					<button>The Wire</button>
+					<p class="voted">The Wire</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Game of Thrones</button>
+					<p class="voted">Game of Thrones</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>The Sopranos</button>
+					<p class="voted">The Sopranos</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Boardwalk Empire</button>
+					<p class="voted">Boardwalk Empire</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 			<div>
 				<h3>What is the best meal of the day?</h3>
-				<button>Breakfast</button>
-				<button>Lunch</button>
-				<button>Dinner</button>
+				<div class="option">
+					<button>Breakfast</button>
+					<p class="voted">Breakfast</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Lunch</button>
+					<p class="voted">Lunch</p>
+					<div class="voted graph"></div>
+				</div>
+				<div class="option">
+					<button>Dinner</button>
+					<p class="voted">Dinner</p>
+					<div class="voted graph"></div>
+				</div>
 			</div>
 		</section>
 		</main>
@@ -101,12 +178,17 @@
 				<input class="submit" name="sub" type="submit">
 			</form>
 		</aside>
+		<aside class="myQ">
+			<h3>What is the best meal of the day?</h3>
+			<h3>What is the best HBO show?</h3>
+			<h3>Who is the Greatest QB ever?</h3>
+		</aside>
 
 		<footer>
 			<nav>
 				<a id= "Ask"> <!-- href="AskQ.html" -->Ask Q</a>
 				<a id="Q">Home</a>
-				<a> <!-- href="YourQ.html" -->My Q's</a>
+				<a class= "myQheader"> My Q's</a>
 				<a> <!-- href="settings.html" -->Settings</a>
 			</nav>
 		</footer>
