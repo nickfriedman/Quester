@@ -55,9 +55,13 @@ $(function() {
  	$(".big").show();
  	$(".myQ").hide();
  	$("body").scrollTop(0);
+ 	$(this).css('color', 'yellow');
+ 	$(this).siblings().css('color', 'black');
  });
  $("#Q").click(function() {
  	goHome();
+ 	$(this).css('color', 'yellow');
+ 	$(this).siblings().css('color', 'black');
  });
  //Click on Home
  $(".gohome").click(function() {
@@ -72,6 +76,8 @@ $(".myQheader").click(function() {
 		$(".myQ").show();
 		$("main").hide();
 		$(".big").hide();
+		$(this).css('color', 'yellow');
+		$(this).siblings().css('color', 'black');
 	}
 	else{
 		$(".myQ").show();
@@ -102,10 +108,9 @@ $(".myQheader").click(function() {
  var two = Math.floor(Math.random()*4);
  $(this).siblings("div").css('background', colors[one]);
  while (one ==two){
- 	var two = Math.floor(Math.random()*5);
+ 	var two = Math.floor(Math.random()*4);
  }
  $(this).parent().siblings('div').children('div').css('background', colors[two]);
-
 });
  function goHome(){
  	$("main").show();

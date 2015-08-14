@@ -62,7 +62,9 @@ header{
 }
 h1{
      font-size: 5em;
-}
+/*     font-family: 'Shadows Into Light', cursive;
+*/   font-family: 'Bangers', cursive;
+     }
 header h2{
      display: none;
 }
@@ -130,6 +132,9 @@ i{
 }
 b{
      margin-left: 4%;
+}
+#Q{
+     color: yellow;
 }
 /******************************************
 /* AskQ                   
